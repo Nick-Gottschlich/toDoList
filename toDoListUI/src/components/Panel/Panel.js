@@ -4,13 +4,9 @@ export default class Panel extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {itemMessage: 'ayy'}
+    this.state = {itemMessage: ''}
 
     this.handleChange = this.handleChange.bind(this)
-  }
-
-  getInitialState() {
-    return { itemMessage: 'fill me in fam'}
   }
 
   handleChange(e) {
@@ -22,8 +18,7 @@ export default class Panel extends React.Component {
   render() {
     return (
       <div>
-        {this.state.itemMessage} <br />
-        Enter your thingo: <input type="text" value={this.state.itemMessage} onChange={this.handleChange} />
+        <input type="text" value={this.state.itemMessage} onChange={this.handleChange} />
       </div>
     )
   }

@@ -4,6 +4,10 @@ import Panel from './components/Panel/Panel.js';
 import './index.css';
 
 ReactDOM.render(
-  <Panel />,
+  <div>
+    <Panel />
+    <Panel />
+  </div>
+  ,
   document.getElementById('root')
 );
