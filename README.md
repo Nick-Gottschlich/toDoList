@@ -1,2 +1,2 @@
 # toDoList
-a to do list
+A to do list.
